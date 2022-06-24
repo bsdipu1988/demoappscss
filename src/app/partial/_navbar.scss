@@ -1,0 +1,72 @@
+@import "colour";
+@import "media-quaries";
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+%display { 
+    display: block;
+    position: absolute; top: 60pt;
+    background: red;
+    
+}
+.navbar {
+    background-color: $grey;
+    height: 80pt;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200pt) / 2);
+    z-index: 1;
+    position: relative;
+
+    &-logo {
+        color: $white;
+        cursor: pointer;   
+        font-size: 1.5rem;
+        margin: 20pt;
+        text-decoration: none;
+        @extend %align-center;
+    }
+
+    &-bars {
+        opacity: 0;
+        @include tablet {
+            color: $red;
+            opacity: 1;
+            position: absolute;
+            top: 20pt;
+            right: 20pt;
+            font-size: 30pt;
+            cursor: pointer;
+            
+        }
+        &:hover {
+            color: $yellowdarken;
+            transition: all 0.5s ease-in;
+            + .navbar-menu { 
+                @extend %display;
+
+            }
+        }
+    }
+
+    &-menu {
+        @extend %align-center;
+        top: 20pt;
+        right: 20pt;
+        justify-content: center;
+        @include tablet {
+           display: none;
+        }
+
+        &-link {
+           text-decoration: none;
+           padding-left: 10pt;
+           &:hover {
+            color: $white;
+            transition: all 0.3s ease;
+           }
+        }
+    }
+}
