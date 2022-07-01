@@ -1,0 +1,42 @@
+@import "colour";
+@import "media-quaries";
+
+.maincontain {
+    border: 1pt solid $black;
+    
+    width: 60%;
+    height: 100%;
+    margin-top: 10pt;
+    padding: 10pt;
+    float: left;
+    @include tablet500 {
+        width: 70%;
+    }
+
+    &-head-msg {  
+        background-color: antiquewhite;
+        border-bottom: 2pt dashed darkblue;
+    }
+    &-head-msg-content {
+        margin: 20pt;
+        float: left;
+        
+    }
+}
+
+.maincontain-sip-input {
+    width: 100%;
+    border-style: groove;
+    border-width: 0.5rem;
+    margin-top: 10pt;
+    float: left;
+    padding: 0.5rem;
+
+    .investment-amount, .investment-age {
+        height: 20px;
+        width: 80%;
+        float: left;
+        border: 2px solid rebeccapurple;
+        margin: 2pt;
+    }
+}

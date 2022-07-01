@@ -60,13 +60,13 @@
            display: none;
         }
 
-        &-link {
-           text-decoration: none;
-           padding-left: 10pt;
-           &:hover {
-            color: $white;
-            transition: all 0.3s ease;
-           }
-        }
+        // &-link {
+        //    text-decoration: none;
+        //    padding-left: 10pt;
+        //    &:hover {
+        //     color: $white;
+        //     transition: all 0.3s ease;
+        //    }
+        // }
     }
 }

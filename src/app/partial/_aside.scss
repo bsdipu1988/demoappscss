@@ -1,0 +1,32 @@
+@import "colour";
+
+.navbar-aside {
+    border: 1pt solid $black;
+    margin: 10pt;
+    width: 30%;
+    height: 50vh;
+    float: left;
+}
+
+.navbar-menu-list {
+    list-style: none;
+    text-align: center;
+    margin: 1rem;
+    &1, &2, &3, &4 {
+        width: 100%;
+        margin: 1rem;
+        padding: 0.5rem;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: aqua;
+
+    }
+    &4 {
+        
+        background-color: $red;
+        color: $white;
+        font-size: 10pt;
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
