@@ -7,6 +7,12 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { SipCalculatorComponent } from './sip-calculator/sip-calculator.component';
 import { HeaderComponent } from './header/header.component';
 import { LoanCalculatorComponent } from './loan-calculator/loan-calculator.component';
+import { WrapperComponent } from './wrapper/wrapper.component';
+import { FinalCalculationComponent } from './final-calculation/final-calculation.component';
+import { FooterComponent } from './footer/footer.component';
+import { HearderThemeComponent } from './hearder-theme/hearder-theme.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +20,13 @@ import { LoanCalculatorComponent } from './loan-calculator/loan-calculator.compo
     NavigationComponent,
     SipCalculatorComponent,
     HeaderComponent,
-    LoanCalculatorComponent
+    LoanCalculatorComponent,
+    WrapperComponent,
+    FinalCalculationComponent,
+    FooterComponent,
+    HearderThemeComponent,
+    AboutUsComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

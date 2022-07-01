@@ -1,0 +1,32 @@
+@import "./../../assets/partial/colour";
+
+.h-theme {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: $lightblue;
+    width: 100%;
+    height: 40px;
+    
+    .theme {
+        text-decoration: none;
+        text-align: center;
+        color: $darken;
+        cursor: pointer;
+        padding: 4px;
+        margin: 5px;
+    }
+    .theme-dark, .theme-light {
+        border: 1px solid red;
+        border-radius: 6px;
+       
+        background-color: $black;
+        color: $white;
+    }
+    .theme-light {
+        background-color: $white;
+        color: $darken;
+    }
+    .theme-normal {
+        padding-top: 8px;
+    }
+}
