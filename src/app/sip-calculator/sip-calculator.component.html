@@ -1,15 +1,22 @@
 <section class="maincontain">
     <h1 class="maincontain-head-msg">SIP Calculator</h1>
+
+    <a class="button" [style]="sipbgcolor" (click)="changecatagory(1);">SIP</a>
+    <a class="button" [style]="lumpsumbgcolor" (click)="changecatagory(2);">Lumpsum</a>
+
     <p class="maincontain-head-msg-content">
         Use this SIP Calculator to calculate the amount you will get after accumulation.
     </p>
     <section class="maincontain-sip-input">
         <h3 class="maincontain-sip-input-msg">Online SIP Calculator for India</h3>
         <div class="maincontain-sip-input-contain">
-            <input type="text" class="investment-amount">
-            <input type="text" class="investment-age">
+            <input type="text" class="investment-amount" [(ngModel)]="amount" (keyup)="show();" placeholder="Write down invesment amount"><div class="amountshow">Rs : {{ amount }}</div>
+            <input type="text" class="investment-roi" [(ngModel)]="roi" (keyup)="
+            show();" placeholder="Write down Rate of Interest Yearly"><div class="amountshow">{{ roi }} % </div>
+            <input type="text" class="investment-duration" [(ngModel)]="duration" (keyup)="show();" placeholder="Write down Duration in Years"><div class="amountshow">{{ duration }} years</div>
         </div>
-        <button class="calc-sip">Calculate</button>
+        <a class="button" (click)="
+        calculatesip();">Calculate</a>
     </section>
-
+    {{ finalamount }}
 </section>

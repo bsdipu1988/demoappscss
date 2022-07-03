@@ -10,7 +10,8 @@ const routes: Routes = [
   {path: 'sipcalculator',component: SipCalculatorComponent},
   {path: 'loancalculator',component: LoanCalculatorComponent},
   {path: 'aboutus',component: AboutUsComponent},
-  {path: 'signup',component: SignupComponent}
+  {path: 'signup',component: SignupComponent},
+  
 ];
 
 @NgModule({

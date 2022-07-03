@@ -2,20 +2,25 @@
 @import "./../../assets/partial/media-quaries";
 
 .maincontain {
-    border: 1pt solid $black;
+    //border: 1pt solid $black;
     
-    width: 60%;
+    width: 50%;
     height: 100%;
     margin-top: 10pt;
     padding: 10pt;
     float: left;
     @include tablet500 {
-        width: 70%;
+        width: 100%;
+       
     }
 
     &-head-msg {  
-        background-color: antiquewhite;
+        //background-color: #e9e9ef;
         border-bottom: 2pt dashed darkblue;
+        color: $heading;
+        margin-bottom: 12pt;
+        padding-bottom: 12pt;
+
     }
     &-head-msg-content {
         margin: 20pt;
@@ -32,11 +37,35 @@
     float: left;
     padding: 0.5rem;
 
-    .investment-amount, .investment-age {
-        height: 20px;
-        width: 80%;
+    input {
+        background-color: aqua;
+        display: block;
+        height: 30px;
+        width: 70%;
         float: left;
         border: 2px solid rebeccapurple;
         margin: 2pt;
     }
+    .amountshow {
+        display: block;
+        float: left;
+        border: 1px solid red;
+        width: 25%;
+        height: 30px;
+        margin-top: 3px;
+    }
+
 }
+a {
+    
+    display: inline-block;
+   // align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+
+
+
