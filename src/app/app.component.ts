@@ -20,3 +20,7 @@ export class AppComponent implements OnInit, OnDestroy {
   
   title = 'appscss';
 }
+
+
+// new subject : observable 
+// x = 0

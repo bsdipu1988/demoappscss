@@ -36,6 +36,12 @@ export class SipCalculatorComponent implements OnInit {
     }
   }
   calculatesip() {
+    let variables = {
+      investedAmount: this.amount * this.duration,
+      roi: this.roi,
+      tanure: this.duration,
+      return: 0
+    }
     if (this.siptype == 1) {
       
       // periodic rate of insterest monthly
@@ -52,7 +58,8 @@ export class SipCalculatorComponent implements OnInit {
       this.finalamount = Math.round(this.amount * ((1 + this.roi / 100) ** (this.duration)));
       console.log(this.finalamount);
     }
-    this.shared.setmsg(this.finalamount);
+    variables.return = this.finalamount;
+    this.shared.setmsg(variables);
 
   }
   
