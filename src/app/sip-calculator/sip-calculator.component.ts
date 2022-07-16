@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from '../shared/shared.service';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'sip-calculator',
@@ -9,11 +10,12 @@ import { SharedService } from '../shared/shared.service';
 export class SipCalculatorComponent implements OnInit {
   sipbgcolor: string | undefined;
   lumpsumbgcolor: string | undefined;
-
   constructor(private shared:SharedService) { }
 
   ngOnInit(): void {
+   
   }
+
   public amount: any;
   public roi: any;
   public duration: any;
@@ -60,9 +62,6 @@ export class SipCalculatorComponent implements OnInit {
     }
     variables.return = this.finalamount;
     this.shared.setmsg(variables);
-
   }
-  
- 
 }
 

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HearderThemeComponent } from './hearder-theme/hearder-theme.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,14 @@ import { SignupComponent } from './signup/signup.component';
     FooterComponent,
     HearderThemeComponent,
     AboutUsComponent,
-    SignupComponent
+    SignupComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

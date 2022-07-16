@@ -1,1 +1,14 @@
 <p>about-us works!</p>
+<section>
+    <form [formGroup]="myReactiveForm">
+       
+        <input type="text" class="form-control" formControlName="username">
+        <input type="text" class="form-control" formControlName="email">
+        <select class="form-control" formControlName="calculatortype">
+            <option value="sip">sip</option>
+            <option value="loan">loan</option>
+        </select>
+        
+        <button type="submit" class="button">submit</button>
+    </form>
+</section>

@@ -1,0 +1,10 @@
+<p>login works!</p>
+<section>
+    <form [formGroup]="login">
+       
+        <input type="text" class="form-control" formControlName="username">
+        <input type="text" class="form-control" formControlName="email">
+        
+        <button type="submit" class="button" (click)="userlogin()">submit</button>
+    </form>
+</section>
